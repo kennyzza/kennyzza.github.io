@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;  /* 调大默认字体 */
+    background-image: url('photo_0.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 使图片填充整个容器 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+	   background-position: center center;  /* 图片将从中心的右边开始 */
+	background-size: 90%;
+    height: 100vh;  /* 视口的高度 */
+    margin: 0;  /* 去除默认的外边距 */
+    background-attachment: fixed; /* 背景图片固定，不随内容滚动 */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* 使容器填充整个视口高度 */
+}
+
+.sidebar {
+    width: 18%;
+    height: 100%;  /* 使侧边栏填充整个容器高度 */
+    padding: 15px;
+	background-color: rgba(243, 244, 246, 0.8);  /* 添加透明度以增强可读性 */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* 如果内容超出侧边栏高度，则允许滚动 */
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 0; /* 调大上下填充增加可点击区域 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px; /* 调大字体 */
+	border-bottom: 2px solid #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+	margin-top: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 40px; /* 调大间距 */
+    font-size: 20px; /* 调大字体 */
+}
+
+.home-link {
+    text-align: center;
+	font-size: 30px; 
+}
+
+.content {
+    width: 80%;
+    padding: 20px; /* 调大内边距 */
+}
+
+.content-section {
+    display: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+
+/* 添加其他所需的样式 */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ASCE User Manual</title>
+    <style>
+        .sidebar a, .sidebar li.main {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .sidebar li.sub {
+            font-size: 1.2em;
+            display: none;
+            margin-left: 10px;
+        }
+    </style>
+	<script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+			<div class="home-link">ASCE User Manual</div>
+            <a href="User manual.html" class="home-link">Back to Home</a>
+            <ul>
+                <li class="main" onclick="toggleSub('intro-sub')">01. Basic Introduction</li>
+                <ul id="intro-sub" class="sub">
+                    <li id="about-asce-link" onclick="showContent('about-asce')">About ASCE </li>
+                </ul>
+
+                <li class="main" onclick="toggleSub('db-sub')">02. Operation Guide</li>
+                <ul id="db-sub" class="sub">
+                    <li id="login-link" onclick="showContent('login')">1) Login/Register</li>
+                    <li id="submit-data-link" onclick="showContent('submit-data')">2) Submit Data Request</li>
+                    <li id="data-transfer-link" onclick="showContent('data-transfer')">3) Data Download and Upload</li>
+                    <li id="faq-link" onclick="showContent('faq')">4) Troubleshooting and Technical Support</li>
+                </ul>
+
+                <li class="main" onclick="toggleSub('query-sub')">03. Available Resources</li>
+                <ul id="query-sub" class="sub">
+                    <li id="advanced-query-link" onclick="showContent('advanced-query')">How to Use Advanced Query</li>
+                </ul>
+
+                <li class="main" onclick="toggleSub('share-sub')">04. Experience Sharing</li>
+                <ul id="share-sub" class="sub">
+                    <li id="feedback-link" onclick="showContent('feedback')">Recommendations and Experience Based on User Feedback</li>
+                </ul>
+            </ul>
+        </nav>
+        <div class="content">
+            <!-- This is the specific content on the right -->
+            <div id="about-asce" class="content-section">
+				<h2>About ASCE</h2>
+				<p>Content about ASCE goes here...</p>
+			</div>
+			<div id="login" class="content-section">
+				<h2>Login/Register</h2>
+				<p>Content about login and registration goes here...</p>
+			</div>
+			<div id="submit-data" class="content-section">
+				<h2>Submit Data Request</h2>
+				<p>Content about submitting data request goes here...</p>
+			</div>
+			<div id="data-transfer" class="content-section">
+				<h2>Data Download and Upload</h2>
+				<p>Content about data download and upload goes here...</p>
+			</div>
+			<div id="faq" class="content-section">
+				<h2>Troubleshooting and Technical Support</h2>
+				<p>Content about troubleshooting and technical support goes here...</p>
+			</div>
+			<div id="advanced-query" class="content-section">
+				<h2>How to Use Advanced Query</h2>
+				<p>Content about using advanced query goes here...</p>
+			</div>
+			<div id="feedback" class="content-section">
+				<h2>Experiences and Recommendations Based on User Feedback</h2>
+				<p>Content based on user feedback goes here...</p>
+			</div>			
+        </div>
+    </div>
+
+    <script>
+        function toggleSub(id) {
+            const elem = document.getElementById(id);
+            if (elem.style.display === "none" || elem.style.display === "") {
+                elem.style.display = "block";
+            } else {
+                elem.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
