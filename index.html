@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCE User Manual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container" style="background-image: url('photo.jpg')">
+	    <h1 class="header-title">ASCE User Manual</h1>
+        <h1 class="main-title" onclick="toggleContent(1)">1. Basic Introduction</h1>
+        <div class="content" id="content-1">
+            <p>About ASCE</p>
+        </div>
+
+        <h1 class="main-title" onclick="toggleContent(2)">2. Operation Guide</h1>
+        <div class="content" id="content-2">
+            <ul>
+                <li>1) Login/Register</li>
+                <li>2) Search Tips and Strategies</li>
+                <li>3) Data Download and Citation</li>
+                <li>4) Troubleshooting and Technical Support</li>
+            </ul>
+        </div>
+
+        <h1 class="main-title" onclick="toggleContent(3)">3. Available Resources</h1>
+        <div class="content" id="content-3">
+            <p>List of Important Available Resources and Features</p>
+        </div>
+
+        <h1 class="main-title" onclick="toggleContent(4)">4. Experience Sharing</h1>
+        <div class="content" id="content-4">
+            <p>Recommendations and Experience Based on User Feedback</p>
+        </div>
+		
+		<a href="start.html" class="start-button">Get Started</a>
+    </div>
+</body>
+</html>
